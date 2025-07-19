@@ -11,11 +11,12 @@ public class DriverFactory {
 
     public static WebDriver getDriver(){
         if(driver==null){
-            System.setProperty("webdriver.chrome.driver", "/Users/rahulnavgire/Desktop/Softwares/chromedriver/chromedriver");
-            ChromeOptions options = new ChromeOptions();
-            options.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"); // Set path manually
+//            System.setProperty("webdriver.chrome.driver", "/Users/rahulnavgire/Desktop/Softwares/chromedriver/chromedriver");
+//            ChromeOptions options = new ChromeOptions();
+//            options.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"); // Set path manually
 
-             driver = new ChromeDriver(options);
+//             driver = new ChromeDriver(options);
+            driver= new ChromeDriver();
              driver.manage().window().maximize();
              driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         }

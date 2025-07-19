@@ -2,6 +2,7 @@ package hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import org.openqa.selenium.WebDriver;
 import utils.DriverFactory;
 
 public class Hooks {
@@ -9,7 +10,9 @@ public class Hooks {
     @Before
     public void setup(){
         System.out.println("In hooks Class");
-        DriverFactory.getDriver();
+         DriverFactory.getDriver();
+//        driver.get("chrome://settings/clearBrowserData");
+
 
     }
 @After
