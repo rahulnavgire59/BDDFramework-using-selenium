@@ -31,8 +31,8 @@ public class YatraHompageStepDef {
     }
     @Then("find the Lowest price in curent months.")
     public void find_the_lowest_price_in_curent_months() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+            yatraHomepage.gettheLowestPrice();
+
     }
 
 
