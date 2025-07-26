@@ -20,7 +20,7 @@ public class YatraHompageStepDef {
     }
 
     @When("user clicks selects {string}")
-    public void user_clicks_selects(String TripType) {
+    public void user_clicks_selects(String TripType) throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
         yatraHomepage.userClickonTripType(TripType);
     }

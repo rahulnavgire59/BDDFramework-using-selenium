@@ -3,7 +3,11 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -23,8 +27,11 @@ public class YatraHomepage {
 
 
     public void userClickonTripType(String tripType) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+
         String value = "//*[contains(text(), 'TripType')]/ancestor::*[@role='radio']";
         value = value.replaceAll("TripType", tripType);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(value))));
         driver.findElement(By.xpath(value)).click();
     }
 
