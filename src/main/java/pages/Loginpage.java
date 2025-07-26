@@ -16,6 +16,7 @@ public class Loginpage {
     By login_btn = By.xpath("//button[@type='submit']");
 
     public void enterUsername(String uName) throws InterruptedException {
+        Thread.sleep(5000);
     driver.findElement(wb_usernamme).sendKeys(uName);
     }
 

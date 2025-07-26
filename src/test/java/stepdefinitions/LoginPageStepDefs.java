@@ -20,6 +20,7 @@ public class LoginPageStepDefs {
     }
     @When("the user enters {string}")
     public void the_user_enters(String uname) throws InterruptedException {
+        Thread.sleep(5000);
        loginpage.enterUsername(uname);
     }
     @When("user enters the {string}")

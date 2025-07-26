@@ -30,7 +30,7 @@ public class YatraHompageStepDef {
         yatraHomepage.userEntersFromAndToValues(from,to);
     }
     @Then("find the Lowest price in curent months.")
-    public void find_the_lowest_price_in_curent_months() {
+    public void find_the_lowest_price_in_curent_months() throws InterruptedException {
             yatraHomepage.gettheLowestPrice();
 
     }

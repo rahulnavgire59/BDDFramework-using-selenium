@@ -29,8 +29,8 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven
 
-      - name: Run Maven tests
-        run: mvn clean install || true
+      - name: Run Tests with Maven
+        run: mvn clean install -Dci=true
 
       - name: Archive Cucumber Reports
         if: always()

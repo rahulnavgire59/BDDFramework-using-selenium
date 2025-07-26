@@ -40,8 +40,10 @@ public class YatraHomepage {
     }
 
 
-    public void gettheLowestPrice() {
+    public void gettheLowestPrice() throws InterruptedException {
         driver.findElement(By.xpath("(//div[contains(@class,'MuiAutocomplete-root MuiAutocomplete-hasClearIcon')])[1]/..")).click();
+       Thread.sleep(5000);
+
         List<WebElement> rates = driver.findElements(By.xpath("//div[@class='react-datepicker__month-container'][1]//span[contains(@class,'custom-day-content ')]"));
         List<String> RatesText = new ArrayList<>();
         for (WebElement webElement : rates) {
