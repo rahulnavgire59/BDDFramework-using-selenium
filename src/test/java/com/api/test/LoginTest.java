@@ -37,20 +37,38 @@ public class LoginTest {
 //
 //
 //        }
-    @Test
-    public void TestLogin() {
-        Authentication authentication = new Authentication();
-        LoginRequest loginRequest = new LoginRequest("uday1234", "uday12345");
-        Response response = authentication.login(loginRequest, "login");
-        System.out.println(response.asPrettyString());
-        ;
-        // LoginResponse loginResponse= new LoginResponse();
-        LoginResponse loginResponse = response.as(LoginResponse.class);
-        System.out.println(loginResponse.getToken());
-        System.out.println(loginResponse.getEmail());
-        System.out.println(loginResponse.id);
+//    @Test
+//    public void TestLogin() {
+//        Authentication authentication = new Authentication();
+//        LoginRequest loginRequest = new LoginRequest("uday1234", "uday12345");
+//        System.out.println(loginRequest.toString());
+//        Response response = authentication.login(loginRequest, "login");
+//        System.out.println(response.asPrettyString());
+//        ;
+//        // LoginResponse loginResponse= new LoginResponse();
+//        LoginResponse loginResponse = response.as(LoginResponse.class);
+//        System.out.println(loginResponse.getToken());
+//        System.out.println(loginResponse.getEmail());
+//        System.out.println(loginResponse.id);
+//
+//    }
 
-    }
+@Test
+    public void testLogin(){
+    Authentication authentication = new Authentication();
+    LoginRequest loginRequest = new LoginRequest("uday1234","uday12345");
+    Response response = authentication.login(loginRequest,"login");
+    System.out.println(response.getBody().prettyPrint());
+    LoginResponse loginResponse = response.as(LoginResponse.class);
+    System.out.println(loginResponse.getToken());
+    System.out.println(loginResponse.getId());
+
+
+
+
+
+}
+
 
 
 }

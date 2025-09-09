@@ -1,7 +1,7 @@
 Feature: Test the login functionality
 
   Scenario Outline: Checking the login functionality for OpenCRM
-
+@smoke
     Given the user is on Login page
     When the user enters "<Username>"
     And user enters the "<Password>"

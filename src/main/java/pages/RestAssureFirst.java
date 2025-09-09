@@ -87,6 +87,11 @@ public class RestAssureFirst {
 
 
 
+        baseURI= "https://jsonplaceholder.typicode.com/posts/1";
+        Response response = given().when().get();
+        System.out.println(response.statusCode());
+        System.out.println(response.getBody().prettyPrint());
+
 
 
 

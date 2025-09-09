@@ -10,12 +10,10 @@ public class Hooks {
     @Before
     public void setup(){
         System.out.println("In hooks Class");
-         DriverFactory.getDriver();
-//        driver.get("chrome://settings/clearBrowserData");
+         DriverFactory.getDriver();}
 
 
-    }
-@After
+    @After
     public void teardown(){
         DriverFactory.quitDriver();
 }

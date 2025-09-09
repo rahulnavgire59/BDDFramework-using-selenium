@@ -8,3 +8,13 @@
 00:49:133 [main] INFO  com.api.Listners.TestListners -Description 
 00:49:696 [main] INFO  com.api.Listners.TestListners -Passed!!TestLogin
 00:49:697 [main] INFO  com.api.Listners.TestListners -The Suite execution is completed
+10:54:830 [main] INFO  com.api.Listners.TestListners -The test Suite has Started !!
+10:54:838 [main] INFO  com.api.Listners.TestListners -Started !!! TestLogin
+10:54:838 [main] INFO  com.api.Listners.TestListners -Description 
+10:56:109 [main] INFO  com.api.Listners.TestListners -Passed!!TestLogin
+10:56:116 [main] INFO  com.api.Listners.TestListners -The Suite execution is completed
+11:01:967 [main] INFO  com.api.Listners.TestListners -The test Suite has Started !!
+11:01:974 [main] INFO  com.api.Listners.TestListners -Started !!! testLogin
+11:01:975 [main] INFO  com.api.Listners.TestListners -Description 
+11:01:513 [main] INFO  com.api.Listners.TestListners -Passed!!testLogin
+11:01:514 [main] INFO  com.api.Listners.TestListners -The Suite execution is completed

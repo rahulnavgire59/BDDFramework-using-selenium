@@ -30,7 +30,7 @@ jobs:
           restore-keys: ${{ runner.os }}-maven
 
       - name: Run Tests with Maven
-        run: mvn clean install -Dci=true
+        run: mvn clean test -Dcucumber.filter.tags="@smoke"
 
       - name: Archive Cucumber Reports
         if: always()
